@@ -1,3 +1,3 @@
 # Python-Projects
 my python projects 
-Eah project has brief description
+Each project has brief description
