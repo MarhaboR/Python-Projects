@@ -1,3 +1,4 @@
 # Python-Projects
-my python projects 
+Author: Marhabo Rakhmatshoeva 
+My python projects 
 Each project has brief description
