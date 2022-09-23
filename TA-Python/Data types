@@ -1,0 +1,171 @@
+Double and Single Quotes
+Can you print "Python"
+#Gives Error; Explanation –
+It gives an invalid syntax error. Because single quote after “it” is considered as the end of the string and rest part is not the part of a string.
+print('It's python')
+print("Hello 'Python'")
+
+
+
+
+Generally, double quotes are used for string representation and single quotes are used for regular expressions, dict keys or SQL. Hence both single
+quote and double quotes depict string in python but it’s sometimes our need to use one type over the other.
+
+
+
+How to tell the Type of a Value?
+• Command: type(<value>
+
+Operation changes from type to type. 
+For example: 
+print(5+3)
+print ('Marhabo'+ 'Rakhmatshoeva')   concatination 
+
+8
+marhaboRakhmatshoeva
+
+_______________________________________________________________Converting from one type to another_______________________________________________________
+
+print(float(2))     Result:2.0
+
+
+_______________________________________________________________Python Input_______________________________________________________
+n Python, we us input() function to take input from the user. The 
+syntax for input() is
+input([promts])
+where prompt is the string we wish to display on the screen. 
+Example:
+x = input('Enter your name:')
+print('Hello, ' + x)
+-----------------------------------------------
+print('Whats your age:')
+x = input()
+print( type(x))
+
+print(int(x))
+print(float(x))
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+print("Hello Word")
+print('Marhabo')
+
+print(type(2))
+print(type(False))
+print(type(2.5))
+print(type("It's me"))
+print(5+3)
+print ('Marhabo'+ 'Rakhmatshoeva')
+print(float(2))
+print(int(2.6))
+
+print('Whats your age:')
+x = input()
+print( type(x))
+
+print(int(x))
+print(float(x))
+
+
+
+print('Enter your name:')
+x = input()
+print('Hello, ' + x)
+
+x = input('Enter your name:')
+print('Hello, ' + x)
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+print(1,2 ,3, 4, 5,sep='#',end='&')
+
+
+_______________________________________________________________Output Formatting_________________________________________________________________
+# Python program showing
+# use of format() method
+ 
+# using format() method
+print('I love {} for "{}!"'.format('Geeks', 'Geeks'))
+ 
+# using format() method and referring
+# a position of the object
+print('{0} and {1}'.format('Geeks', 'Portal'))
+ 
+print('{1} and {0}'.format('Geeks', 'Portal'))
+ 
+ 
+# the above formatting can also be done by using f-Strings
+# Although, this features work only with python 3.6 or above.
+ 
+print(f"I love {'Geeks'} for \"{'Geeks'}!\"")
+ 
+# using format() method and referring
+# a position of the object
+print(f"{'Geeks'} and {'Portal'}")
+
+
+----------------------------------------------------------
+# Python program showing
+# a use of format() method
+ 
+# combining positional and keyword arguments
+print('Number one portal is {0}, {1}, and {other}.'
+     .format('Geeks', 'For', other ='Geeks'))
+ 
+# using format() method with number
+print("Geeks :{0:2d}, Portal :{1:8.2f}".
+      format(12, 00.546))
+ 
+# Changing positional argument
+print("Second argument: {1:3d}, first one: {0:7.2f}".
+      format(47.42, 11))
+ 
+print("Geeks: {a:5d},  Portal: {p:8.2f}".
+     format(a = 453, p = 59.058))
+  ------------------------------------------------------------
+  
+# Python program to
+# show format() is
+# used in dictionary
+ 
+tab = {'geeks': 4127, 'for': 4098, 'geek': 8637678}
+ 
+# using format() in dictionary
+print('Geeks: {0[geeks]:d}; For: {0[for]:d}; '
+    'Geeks: {0[geek]:d}'.format(tab))
+ 
+data = dict(fun ="GeeksForGeeks", adj ="Portal")
+ 
+# using format() in dictionary
+print("I love {fun} computer {adj}".format(**data))
+-------------------------------------------------------------
+# Python program to
+# format a output using
+# string() method
+ 
+cstr = "I love geeksforgeeks"
+   
+# Printing the center aligned 
+# string with fillchr
+print ("Center aligned string with fillchr: ")
+print (cstr.center(40, '#'))
+ 
+# Printing the left aligned 
+# string with "-" padding 
+print ("The left aligned string is : ")
+print (cstr.ljust(40, '-'))
+ 
+# Printing the right aligned string
+# with "-" padding 
+print ("The right aligned string is : ")
+print (cstr.rjust(40, '-'))
+______________________________________________________________Import_______________________________________________________ Separate leseson on import
+Module: simply a file with a . py extension.
+Package: a directory containing an __init__.py file and normally other modules.
+Built-in Module: A module that is natively installed with Python.
+Object: Anything inside a module/package that can be referenced such as a class, function, or variable.
+---------------------------------------
+import math
+from math import pi
+print(math.pi)
+
+
+
