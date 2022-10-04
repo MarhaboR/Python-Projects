@@ -1,0 +1,54 @@
+
+import random
+class Environment(object):
+    def __init__(self):
+        self.locationcondition = {'A': random.randint(0, 1), 'B': random.randint(0, 1)}
+        # RANDOM CONDITION
+
+class Sreflexagent(Environment):
+    def __init__(self, environment):
+        print("Current Environment condition")
+        print(environment.locationcondition)
+
+        doglocation = 0
+       
+        if doglocation == 0:
+            print("The Blind-Dog  moves down and eat food or drint the water if it is ")
+            # covers {[1] [1]} and {[1] [0]}
+            if environment.locationcondition['A'] == 1:
+                print("There is not food available")
+                print("He is searching for food")
+                environment.locationcondition['A'] == 0
+                print("The blind-dog found the food")
+                
+                if environment.locationcondition['B'] == 1:
+                    print("Now he is again searching for the water")
+                    environment.locationcondition['B'] == 0
+                    print("He found the water")
+                    print("He is full now")
+                else:
+                    print("It goes back to the usual Water place")
+                    print("There is water available")
+                    print("It drinks the water")
+                    print("The dog is full now")
+
+            else:
+                print("There is food available")
+                if environment.locationcondition['B'] == 1:
+                    print("It eats the food")
+                    environment.locationcondition['B'] == 0
+                    print("Moves to water place but there is not water")
+                    print("It searches for water")
+                    print("It finds the water and drinks it")
+                else:
+                    print("He eats the food")
+                    print("Moves to the water place")
+                    print("There is water available")
+                    print("It drinks the water")
+
+     
+
+
+# print(Environment.locationcondition)
+theEnvironment = Environment()
+thevacuum = Sreflexagent(theEnvironment)
